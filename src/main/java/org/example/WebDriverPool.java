@@ -34,4 +34,10 @@ public class WebDriverPool {
     public synchronized void returnWebDriver(WebDriver driver) {
         // Reset the driver state if necessary
     }
+
+    public void destroy(){
+        for(WebDriver driver : webDrivers){
+            driver.close();
+        }
+    }
 }
