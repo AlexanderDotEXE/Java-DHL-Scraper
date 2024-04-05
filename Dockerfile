@@ -12,4 +12,4 @@ WORKDIR /app
 EXPOSE 8080
 
 # Command to run the Spring Boot application when the container starts
-CMD ["java", "-jar", "/app/DHL-Scraper.jar"]
+CMD ["java", "-jar", "/DHL-Scraper.jar"]
